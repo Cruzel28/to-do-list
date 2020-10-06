@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+html,
+body,
+#root {
+  height: 100vh;
+  width: 100vw;
+  font-size: 30px;
+  font-family: "Roboto", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+/*start title css*/
+.title-container {
+  display: flex;
+  justify-content: center;
+  padding: 1.5rem 0;
+  text-transform: uppercase;
+}
+
+/*end title css*/
+
+
+/*start input css*/
+.input-container {
+  display: flex;
+  /* justify-content: center; */
+  padding: 1rem ; 
+  margin-bottom: 1rem;
+}
+
+.input-container > input {
+  outline: none;
+  border: none;
+  font-size: 1rem;
+  padding: .5rem 0;
+border-bottom: 3px solid #ccc;
+width: 100%;
+transition: border-bottom .3s;
+}
+.input-container > input:focus{
+border-bottom: 3px solid gray;
+}
+
+.input-container > input::placeholder{
+color:#aaa;
+}
+/*end input css*/
+
+
+
+/*strat lane css*/
+.lane-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.lane-content {
+  /* width: calc(100%/3); */
+  flex: 1;
+display: flex;
+flex-direction:column;
+align-items: center;
+  padding: 0 1rem;
+  /* outline: 1px solid black; */
+}
+
+.lane-title{
+margin-bottom: 1rem;
+font-size: 1rem;
+font-weight: bold;
+}
+
+.list-container{
+  list-style: none;
+  width: 100%;
+
+}
+
+.list-item{
+padding: .5rem;
+display:flex;
+align-items: center;
+font-size: .5rem;
+border: 1px solid black;
+}
+.list-content{
+  flex:1;
+}
+
+.btn{
+  border: none;
+  outline: none;
+  font-size: 0.5rem;
+  padding: 10px 15px;
+margin: 0 5px;
+cursor: pointer;
+background-color: transparent;
+border: 1px solid gray;
+border-radius: 5px;
+}
+
+.btn:hover{
+background-color: #aaa;
+color: #fff;
+}
+/*end lane css*/
